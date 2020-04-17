@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Tag\Img;
+namespace App\Tag;
 
 
 class Img

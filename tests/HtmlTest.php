@@ -20,4 +20,12 @@ class HtmlTest extends \PHPUnit\Framework\TestCase
 
         $this->assertEquals('<a href="http://seusite.com/perfil"><img src="images/photo.jpg"></a>', $link);
     }
+
+    public function testCriaUmLista()
+    {
+        $html = new Html;
+        $list = $html->ul('<li>Eduardo</li>');
+
+        $this->assertEquals('<ul><li>Eduardo</li></ul>', $list);
+    }
 }

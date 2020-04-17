@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Tag\A;
+namespace App\Tag;
 
 
 class A
