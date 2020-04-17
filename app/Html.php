@@ -4,13 +4,12 @@ namespace App;
 
 class Html
 {
-
-    /**
-     * @param string $src
-     * @return string
-     */
-    public function img(string $src)
+    public function __call($name, $arguments)
     {
-        return '<img src="'.$src.'">';
+        $class = 'App\Tag\\'.ucfirst($name);
+        //instancia a classe
+        //chama o metodo render
+        //passa os arumentos
+        return call_user_func_array([new $class,'render'], $arguments);
     }
 }
