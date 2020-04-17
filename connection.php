@@ -30,4 +30,5 @@ class Connection
     }
 }
 
-$conn = new Connection('localhost', )
+$conn = new Connection('localhost','solid','root','root');
+$conn->connect('mysql');
